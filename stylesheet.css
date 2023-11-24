@@ -1,0 +1,52 @@
+body {
+    background-color: #D5DDE9;
+}
+.parent-container {
+    width: 45vw;
+    /* height: 89vh;  */
+    border: 20px solid #000;
+    background: #112557;
+    display: flex;
+    margin: 3em auto 0 auto;
+}
+
+.nav {
+    width: 17.08333rem;
+    /* height: 81.91667rem; */
+    background: #FFFFFF;
+    background-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section {
+    color: #D5DDE9;
+}
+
+.line {
+    color: #F7F8FB;
+}
+
+.welcome-section {
+    display: block;
+}
+
+.about-section {
+    display: none;
+}
+
+.testimonials-section {
+    display: none;
+}
+
+.search-engagements-section {
+    display: none;
+}
+
+.year-end-letter-section {
+    display: none;
+}
+
+.contact-information-section {
+    display: none;
+}

@@ -1,5 +1,7 @@
 body {
     background-color: #D5DDE9;
+    font-family: 'Nunito Sans', sans-serif;
+
 }
 .parent-container {
     width: 45vw;
@@ -17,6 +19,48 @@ body {
     background-blend-mode: hard-light;
     display: flex;
     flex-direction: column;
+}
+
+.image-nav {
+    width: 17.08333rem;
+    background: url("./pics/graph2copyWhite.png"), lightgray 0% 0% / 15.000000596046448px 15.000000596046448px repeat;
+    /* background-blend-mode: darken; */
+    z-index: 2;
+}
+
+.transparent-nav {
+    width: 17.08333rem;
+    background: rgba(247, 248, 251, 0.70);
+    z-index: 3;
+}
+
+.jones-span {
+    color: rgba(98, 110, 141, 0.70);
+    font-family: 'Nunito Sans';
+    text-align: center;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    font-size: 4.16667rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.29167rem;
+}
+
+.partners-span {
+    color: #112557;
+    text-align: center;
+    font-size: 2.41667rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.29rem;
+}
+.partners-p {
+    border-bottom: 1px solid #112557;
+}
+.welcome-btn {
+    background-color: transparent;
+    width: 17rem;
 }
 
 .text-section {
@@ -48,5 +92,16 @@ body {
 }
 
 .contact-information-section {
+    display: none;
+}
+
+.abt-quality-section {
+    display: none;
+}
+
+.abt-ethics-section {
+    display: none;
+}
+.abt-backgrounds-section {
     display: none;
 }

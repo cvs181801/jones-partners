@@ -17,21 +17,38 @@ body {
     /* height: 81.91667rem; */
     background: #FFFFFF;
     background-blend-mode: hard-light;
-    display: flex;
-    flex-direction: column;
+    /* border: 1px solid salmon; */
 }
 
 .image-nav {
-    width: 17.08333rem;
-    background: url("./pics/graph2copyWhite.png"), lightgray 0% 0% / 15.000000596046448px 15.000000596046448px repeat;
+    /* width: 17.08333rem; */
+    height: 100%;
+    width: 100%;
+    /* background: url("./pics/graph2copyWhite.png"), lightgray 0% 0% / 15px 15px repeat; */
+    background: url("./pics/graph2copyWhite.png");
+    background-size: 220%; 
     /* background-blend-mode: darken; */
-    z-index: 2;
+    /* z-index: 2; */
+    /* border: 1px solid red; */
 }
 
 .transparent-nav {
-    width: 17.08333rem;
+    /* width: 17.08333rem; */
+    height: 100%;
+    width: 100%;
     background: rgba(247, 248, 251, 0.70);
-    z-index: 3;
+    /* z-index: 3; */
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-nav-line {
+    background-color: #112557;
+    height: 1px;
+    border: none;
+    width: 80%;
 }
 
 .jones-span {
@@ -39,28 +56,49 @@ body {
     font-family: 'Nunito Sans';
     text-align: center;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
-    font-size: 4.16667rem;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 3rem;
     letter-spacing: 0.29167rem;
 }
 
 .partners-span {
     color: #112557;
     text-align: center;
-    font-size: 2.41667rem;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.29rem;
+    letter-spacing: 0.26rem;
 }
-.partners-p {
-    border-bottom: 1px solid #112557;
+
+.about-span {
+    font-size: 11px;
 }
-.welcome-btn {
+
+button {
+    cursor: pointer;
     background-color: transparent;
-    width: 17rem;
+    border: none;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color:#112557;
+}
+
+#welcome-btn {
+    text-align: center; 
+    margin-top: 2em;
+    border: 1px solid hotpink;
+}
+
+#about-btn {
+    margin-top: 2em;
+}
+
+#contact-btn {
+    margin-top: 2em;
 }
 
 .text-section {
@@ -102,6 +140,7 @@ body {
 .abt-ethics-section {
     display: none;
 }
+
 .abt-backgrounds-section {
     display: none;
 }

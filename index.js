@@ -23,6 +23,17 @@ const abtBackgroundsSection = document.getElementById('abt-backgrounds-section')
 const sectionArray = [welcomeSection, aboutSection, testimonialsSection, searchEngagementsSection, yearEndLetterSection, contactInformationSection];
 const abtSectionArray = [abtQualitySection, abtEthicsSection, abtBackgroundsSection];
 
+window.onload = function() {
+    sectionArray.forEach(element => {
+        if (element.id != "welcome-section") {
+            element.style.display = "none"
+            console.log(element.id);
+        } else {
+            element.style.display = "block"
+        }
+    });
+};
+
 welcomeBtn.addEventListener("click", function(e){
     e.preventDefault();
     sectionArray.forEach(element => {
@@ -132,7 +143,5 @@ abtBackgroundsBtn.addEventListener("click", function(e){
 });
 
 //hover effect
-//email functionality on contact page 
-//favicon
-//import fonts
-//small change
+//we're getting all the sections appearing on first load.
+//image not tiling right.

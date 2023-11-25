@@ -3,6 +3,7 @@
     --offwhite: #F7F8FB;
     --light-grey: #D5DDE9;
     --feather-grey: #C0C5D2;
+    --blue-grey: #9BABD5;
     --transparent-feather-grey: #d5dde946;
     --transparent-med-grey: #828ca6a1;
     --transparent-navy: #112557b1;
@@ -181,6 +182,14 @@ button {
     line-height: 1rem;
 }
 
+.text-content-contact {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.1rem;
+}
+
 .line {
     color: var(--offwhite);
 }
@@ -255,6 +264,18 @@ button {
     margin: 0;
 }
 
+.center-txt {
+    text-align: center;
+}
+
+.email-a, .email-a:visited {
+    color: var(--blue-grey)
+}
+
+.email-a:hover {
+    color: var(--white);
+}
+
 .about-section {
     display: none;
 }
@@ -296,3 +317,10 @@ button {
     margin-top: 50px;
 }
 
+.copyright-text {
+    color: var(--navy);
+    font-size: 7px;
+    width: 790px;
+    text-align: right;
+    margin: 5px auto 0 auto;
+}

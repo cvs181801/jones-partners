@@ -174,9 +174,6 @@ abtBackgroundsBtn.addEventListener("click", function(e){
 });
 
 
-//add a little grey right and left linear-gradient to nav bar ??? 
-//make the background one size / non responsive 
-//style about nav and text sections.
-//fix the position and size of text for copyright . 
+//fix the width / alignment of the text sections... 
 //get better graph pictures ? ? ? 
-//make JONES text a little darker
+//fix the length of the section title underlines.

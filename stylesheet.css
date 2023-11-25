@@ -13,11 +13,14 @@ body {
 }
 
 .nav {
-    width: 17.08333rem;
+    /* width: 17.08333rem; */
     /* height: 81.91667rem; */
     background: #FFFFFF;
     background-blend-mode: hard-light;
     /* border: 1px solid salmon; */
+    /* border-left: 9px solid grey;
+    border-right: 9px solid grey; */
+  
 }
 
 .image-nav {
@@ -41,14 +44,26 @@ body {
     /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
-
+    padding-top: 0;
 }
 
 .main-nav-line {
     background-color: #112557;
     height: 1px;
     border: none;
-    width: 80%;
+    width: 55%;
+    position: relative;
+    top: -0.1%;
+    margin: 5px auto;
+}
+
+.main-nav-line-welcome {
+    background-color: #112557;
+    height: 1px;
+    border: none;
+    width: 97%;
+    position: relative;
+    top: -10%;
 }
 
 .jones-span {
@@ -56,23 +71,28 @@ body {
     font-family: 'Nunito Sans';
     text-align: center;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
-    font-size: 50px;
+    font-size: 45px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 3rem;
-    letter-spacing: 0.29167rem;
+    letter-spacing: 0.2rem;
 }
 
 .partners-span {
     color: #112557;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 0.26rem;
+    /* border-bottom: 1px solid red; */
 }
 
-.about-span {
+.primarysearch-span {
+    font-size: 11px;
+}
+
+#about-span {
     font-size: 11px;
 }
 
@@ -81,24 +101,34 @@ button {
     background-color: transparent;
     border: none;
     font-family: 'Nunito Sans';
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: .5px;
     color:#112557;
+    height: fit-content;
+}
+
+
+#about-btn:hover, #testimonials-btn:hover, #search-engagements-btn:hover, #year-end-letter-btn:hover {
+    background-color: rgba(13, 19, 37, 0.124);
 }
 
 #welcome-btn {
     text-align: center; 
     margin-top: 2em;
-    border: 1px solid hotpink;
+    line-height: 1.5rem;
+    margin-top: 2em;
 }
 
 #about-btn {
     margin-top: 2em;
+    /* margin-bottom: 0; */
 }
 
 #contact-btn {
-    margin-top: 2em;
+    margin-top: 4em;
+    line-height: .8rem;
+    font-weight: 700;
 }
 
 .text-section {
@@ -143,4 +173,13 @@ button {
 
 .abt-backgrounds-section {
     display: none;
+}
+
+.about-nav {
+    border: 1px solid hotpink;
+    
+}
+
+#abt-quality-btn, #abt-ethics-btn, #abt-backgrounds-btn {
+    color: #D5DDE9;
 }

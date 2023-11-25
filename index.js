@@ -22,10 +22,19 @@ const abtBackgroundsSection = document.getElementById('abt-backgrounds-section')
 
 const sectionArray = [welcomeSection, aboutSection, testimonialsSection, searchEngagementsSection, yearEndLetterSection, contactInformationSection];
 const abtSectionArray = [abtQualitySection, abtEthicsSection, abtBackgroundsSection];
+const mainNavBtnArray = [aboutBtn, testimonialsBtn, searchEngagementsBtn, yearEndLetterBtn];
 
 window.onload = function() {
     sectionArray.forEach(element => {
         if (element.id != "welcome-section") {
+            element.style.display = "none"
+            console.log(element.id);
+        } else {
+            element.style.display = "block";
+        }
+    });
+    abtSectionArray.forEach(element => {
+        if (element.id != "abt-quality-section") {
             element.style.display = "none"
             console.log(element.id);
         } else {
@@ -51,9 +60,12 @@ aboutBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "about-section") {
             element.style.display = "none"
-            console.log(element.id);
+            mainNavBtnArray.forEach(btn => {
+                btn.style.color = "#112557";
+            });
         } else {
             element.style.display = "block"
+            aboutBtn.style.color = "#919AB1";
         }
     });
 });
@@ -63,9 +75,12 @@ testimonialsBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "testimonials-section") {
             element.style.display = "none"
-            console.log(element.id);
+            mainNavBtnArray.forEach(btn => {
+                btn.style.color = "#112557";
+            });
         } else {
-            element.style.display = "block"
+            element.style.display = "block";
+            testimonialsBtn.style.color = "#919AB1";
         }
     });
 });
@@ -75,9 +90,12 @@ searchEngagementsBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "search-engagements-section") {
             element.style.display = "none"
-            console.log(element.id);
+            mainNavBtnArray.forEach(btn => {
+                btn.style.color = "#112557";
+            });
         } else {
-            element.style.display = "block"
+            element.style.display = "block";
+            searchEngagementsBtn.style.color = "#919AB1";
         }
     });
 });
@@ -87,9 +105,12 @@ yearEndLetterBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "year-end-letter-section") {
             element.style.display = "none"
-            console.log(element.id);
+            // mainNavBtnArray.forEach(btn => {
+            //     btn.style.color = "#112557";
+            // });  **need to add a filter that will change all but the yearendletterbtn color
         } else {
             element.style.display = "block"
+            yearEndLetterBtn.style.color = "#919AB1";
         }
     });
 });
@@ -142,6 +163,9 @@ abtBackgroundsBtn.addEventListener("click", function(e){
     });
 });
 
-//hover effect
-//we're getting all the sections appearing on first load.
-//image not tiling right.
+
+//add a little grey right and left linear-gradient to nav bar ??? 
+//grey when active: 919AB1
+//make the background one size / non responsive 
+//style about nav and text sections.
+//fix the position and size of text for copyright . 

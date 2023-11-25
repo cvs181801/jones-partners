@@ -4,23 +4,28 @@ body {
 
 }
 .parent-container {
-    width: 45vw;
+    width: 760px;
     /* height: 89vh;  */
-    border: 20px solid #000;
+    border: 15px solid #000;
     background: #112557;
     display: flex;
     margin: 3em auto 0 auto;
 }
 
 .nav {
-    /* width: 17.08333rem; */
+    width: 200px;
     /* height: 81.91667rem; */
     background: #FFFFFF;
     background-blend-mode: hard-light;
     /* border: 1px solid salmon; */
     /* border-left: 9px solid grey;
     border-right: 9px solid grey; */
-  
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: row; 
+    /* padding-left: 10px;
+    padding-right: 10px; */
+   
 }
 
 .image-nav {
@@ -30,9 +35,28 @@ body {
     /* background: url("./pics/graph2copyWhite.png"), lightgray 0% 0% / 15px 15px repeat; */
     background: url("./pics/graph2copyWhite.png");
     background-size: 220%; 
+    padding-bottom: 1.5em;
     /* background-blend-mode: darken; */
     /* z-index: 2; */
     /* border: 1px solid red; */
+   
+}
+
+.gradient-left {
+    width: 10px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(104,115,146,1) 100%);
+    padding-bottom: 1.5em;
+}
+
+.gradient-right {
+    width: 10px;
+    height: 100%;
+    background: rgb(104,115,146);
+    background: linear-gradient(90deg, rgba(104,115,146,1) 0%, rgba(255,255,255,1) 100%);
+    padding-bottom: 1.5em;
 }
 
 .transparent-nav {
@@ -45,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 0;
+    padding-bottom: 1.5em;
 }
 
 .main-nav-line {
@@ -133,14 +158,40 @@ button {
 
 .text-section {
     color: #D5DDE9;
+    color: #C0C5D2;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.text-content, ul {
+    line-height: 1.1rem;
 }
 
 .line {
     color: #F7F8FB;
 }
 
-.welcome-section {
+#welcome-section {
     display: block;
+    /* border: 3px solid red; */
+}
+.section-title {
+    /* border: 2px solid pink; */
+    margin: 0;
+    text-transform: uppercase;
+    font-weight:300;
+    letter-spacing: 0.20rem;
+    font-size: 30px;
+    height: 37px;
+    border-bottom: 1px solid #F7F8FB;
+}
+
+.title-gray {
+    color:#828ca6a1;
+}
+
+.bold-txt {
+    font-weight: 800;
 }
 
 .about-section {

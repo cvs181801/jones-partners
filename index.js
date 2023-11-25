@@ -24,11 +24,13 @@ const sectionArray = [welcomeSection, aboutSection, testimonialsSection, searchE
 const abtSectionArray = [abtQualitySection, abtEthicsSection, abtBackgroundsSection];
 const mainNavBtnArray = [aboutBtn, testimonialsBtn, searchEngagementsBtn, yearEndLetterBtn];
 
+const navyBlue = '#112557';
+const ltGrey = '#919AB1';
+
 window.onload = function() {
     sectionArray.forEach(element => {
         if (element.id != "welcome-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block";
         }
@@ -36,7 +38,6 @@ window.onload = function() {
     abtSectionArray.forEach(element => {
         if (element.id != "abt-quality-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -48,7 +49,6 @@ welcomeBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "welcome-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -60,14 +60,17 @@ aboutBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "about-section") {
             element.style.display = "none"
-            mainNavBtnArray.forEach(btn => {
-                btn.style.color = "#112557";
-            });
         } else {
             element.style.display = "block"
-            aboutBtn.style.color = "#919AB1";
         }
     });
+    mainNavBtnArray.forEach(btn => {
+        if (btn.id == "about-btn"){
+            btn.style.color = ltGrey;
+        } else {
+            btn.style.color = navyBlue;
+        }
+    });  
 });
 
 testimonialsBtn.addEventListener("click", function(e){
@@ -75,14 +78,17 @@ testimonialsBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "testimonials-section") {
             element.style.display = "none"
-            mainNavBtnArray.forEach(btn => {
-                btn.style.color = "#112557";
-            });
         } else {
             element.style.display = "block";
-            testimonialsBtn.style.color = "#919AB1";
         }
     });
+    mainNavBtnArray.forEach(btn => {
+        if (btn.id == "testimonials-btn"){
+            btn.style.color = ltGrey;
+        } else {
+            btn.style.color = navyBlue;
+        }
+    });  
 });
 
 searchEngagementsBtn.addEventListener("click", function(e){
@@ -90,14 +96,17 @@ searchEngagementsBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "search-engagements-section") {
             element.style.display = "none"
-            mainNavBtnArray.forEach(btn => {
-                btn.style.color = "#112557";
-            });
         } else {
             element.style.display = "block";
-            searchEngagementsBtn.style.color = "#919AB1";
         }
     });
+    mainNavBtnArray.forEach(btn => {
+        if (btn.id == "search-engagements-btn"){
+            btn.style.color = ltGrey;
+        } else {
+            btn.style.color = navyBlue;
+        }
+    });  
 });
 
 yearEndLetterBtn.addEventListener("click", function(e){
@@ -105,14 +114,19 @@ yearEndLetterBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "year-end-letter-section") {
             element.style.display = "none"
-            // mainNavBtnArray.forEach(btn => {
-            //     btn.style.color = "#112557";
-            // });  **need to add a filter that will change all but the yearendletterbtn color
+            
         } else {
             element.style.display = "block"
             yearEndLetterBtn.style.color = "#919AB1";
         }
     });
+    mainNavBtnArray.forEach(btn => {
+        if (btn.id == "year-end-letter-btn"){
+            btn.style.color = ltGrey;
+        } else {
+            btn.style.color = navyBlue;
+        }
+    });  
 });
 
 contactBtn.addEventListener("click", function(e){
@@ -120,7 +134,6 @@ contactBtn.addEventListener("click", function(e){
     sectionArray.forEach(element => {
         if (element.id != "contact-information-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -132,7 +145,6 @@ abtQualityBtn.addEventListener("click", function(e){
     abtSectionArray.forEach(element => {
         if (element.id != "abt-quality-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -144,7 +156,6 @@ abtEthicsBtn.addEventListener("click", function(e){
     abtSectionArray.forEach(element => {
         if (element.id != "abt-ethics-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -156,7 +167,6 @@ abtBackgroundsBtn.addEventListener("click", function(e){
     abtSectionArray.forEach(element => {
         if (element.id != "abt-backgrounds-section") {
             element.style.display = "none"
-            console.log(element.id);
         } else {
             element.style.display = "block"
         }
@@ -165,7 +175,8 @@ abtBackgroundsBtn.addEventListener("click", function(e){
 
 
 //add a little grey right and left linear-gradient to nav bar ??? 
-//grey when active: 919AB1
 //make the background one size / non responsive 
 //style about nav and text sections.
 //fix the position and size of text for copyright . 
+//get better graph pictures ? ? ? 
+//make JONES text a little darker

@@ -154,7 +154,7 @@ button {
 
 .text-section {
     color: var(--feather-grey);
-    font-size: 13px;
+    font-size: 15px;
     padding: 20px;
     width: 100%;
 }
@@ -170,8 +170,13 @@ button {
 .text-content-contact {
     text-align: center;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.1rem;
+    letter-spacing: .02rem;;
+}
+.text-content-stanza {
+    margin-top: 0px;
+    line-height: 1rem;
 }
 
 .line {
@@ -217,7 +222,8 @@ button {
 #abt-quality-btn, #abt-ethics-btn, #abt-backgrounds-btn {
     color: var(--feather-grey);
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 12px;
+    letter-spacing: .05rem;
 }
 
 #abt-quality-btn:hover, #abt-ethics-btn:hover, #abt-backgrounds-btn:hover {
@@ -243,6 +249,7 @@ button {
 .indent-txt {
     text-indent: 13%;
     margin: 0;
+    line-height: 1rem;;
 }
 
 .center-txt {
@@ -267,7 +274,7 @@ button {
 
 #abt-quality-section, #abt-ethics-section, #abt-backgrounds-section {
     display: none;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.1rem;
     margin-top: 50px;
 }

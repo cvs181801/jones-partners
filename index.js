@@ -16,33 +16,17 @@ const searchEngagementsSection = document.getElementById("search-engagements-sec
 const yearEndLetterSection = document.getElementById("year-end-letter-section");
 const contactInformationSection = document.getElementById("contact-information-section");
 
+const abtSectionDefault = document.getElementById('about-section-default');
 const abtQualitySection = document.getElementById('abt-quality-section');
 const abtEthicsSection = document.getElementById('abt-ethics-section');
 const abtBackgroundsSection = document.getElementById('abt-backgrounds-section');
 
 const sectionArray = [welcomeSection, aboutSection, testimonialsSection, searchEngagementsSection, yearEndLetterSection, contactInformationSection];
-const abtSectionArray = [abtQualitySection, abtEthicsSection, abtBackgroundsSection];
+const abtSectionArray = [abtSectionDefault, abtQualitySection, abtEthicsSection, abtBackgroundsSection];
 const mainNavBtnArray = [aboutBtn, testimonialsBtn, searchEngagementsBtn, yearEndLetterBtn];
 
 const navyBlue = '#112557';
 const ltGrey = '#919AB1';
-
-window.onload = function() {
-    sectionArray.forEach(element => {
-        if (element.id != "welcome-section") {
-            element.style.display = "none"
-        } else {
-            element.style.display = "block";
-        }
-    });
-    abtSectionArray.forEach(element => {
-        if (element.id != "abt-quality-section") {
-            element.style.display = "none"
-        } else {
-            element.style.display = "block"
-        }
-    });
-};
 
 welcomeBtn.addEventListener("click", function(e){
     e.preventDefault();
@@ -53,6 +37,9 @@ welcomeBtn.addEventListener("click", function(e){
             element.style.display = "block"
         }
     });
+    mainNavBtnArray.forEach(btn => {
+            btn.style.color = navyBlue;  
+    });  
 });
 
 aboutBtn.addEventListener("click", function(e){
@@ -62,6 +49,13 @@ aboutBtn.addEventListener("click", function(e){
             element.style.display = "none"
         } else {
             element.style.display = "block"
+        }
+    });
+    abtSectionArray.forEach(section => {
+        if (section.id != "about-section-default") {
+            section.style.display = "none"
+        } else {
+            section.style.display = "block"
         }
     });
     mainNavBtnArray.forEach(btn => {
@@ -138,6 +132,9 @@ contactBtn.addEventListener("click", function(e){
             element.style.display = "block"
         }
     });
+    mainNavBtnArray.forEach(btn => {
+        btn.style.color = navyBlue;  
+    }); 
 });
 
 abtQualityBtn.addEventListener("click", function(e){
@@ -174,6 +171,4 @@ abtBackgroundsBtn.addEventListener("click", function(e){
 });
 
 
-//fix the width / alignment of the text sections... 
-//get better graph pictures ? ? ? 
-//fix the length of the section title underlines.
+

@@ -1,13 +1,24 @@
+:root {
+    --white: #FFFFFF;
+    --offwhite: #F7F8FB;
+    --light-grey: #D5DDE9;
+    --feather-grey: #C0C5D2;
+    --transparent-feather-grey: #d5dde946;
+    --transparent-med-grey: #828ca6a1;
+    --transparent-navy: #112557b1;
+    --navy: #112557;
+    --black: #000000;
+}
+
 body {
-    background-color: #D5DDE9;
+    background-color: var(--light-grey);
     font-family: 'Nunito Sans', sans-serif;
 
 }
 .parent-container {
     width: 760px;
-    /* height: 89vh;  */
     border: 15px solid #000;
-    background: #112557;
+    background: var(--navy);
     display: flex;
     margin: 3em auto 0 auto;
 }
@@ -15,7 +26,7 @@ body {
 .nav {
     width: 200px;
     /* height: 81.91667rem; */
-    background: #FFFFFF;
+    background: var(--white);
     background-blend-mode: hard-light;
     /* border: 1px solid salmon; */
     /* border-left: 9px solid grey;
@@ -73,7 +84,7 @@ body {
 }
 
 .main-nav-line {
-    background-color: #112557;
+    background-color: var(--navy);
     height: 1px;
     border: none;
     width: 55%;
@@ -83,7 +94,7 @@ body {
 }
 
 .main-nav-line-welcome {
-    background-color: #112557;
+    background-color: var(--navy);
     height: 1px;
     border: none;
     width: 97%;
@@ -92,7 +103,7 @@ body {
 }
 
 .jones-span {
-    color: rgba(98, 110, 141, 0.70);
+    color: rgba(98, 110, 141, 0.783);
     font-family: 'Nunito Sans';
     text-align: center;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
@@ -104,7 +115,7 @@ body {
 }
 
 .partners-span {
-    color: #112557;
+    color: var(--navy);
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -129,7 +140,7 @@ button {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: .5px;
-    color:#112557;
+    color:var(--navy);
     height: fit-content;
 }
 
@@ -137,6 +148,10 @@ button {
 #about-btn:hover, #testimonials-btn:hover, #search-engagements-btn:hover, #year-end-letter-btn:hover {
     background-color: rgba(13, 19, 37, 0.124);
 }
+
+/* #about-btn:focus, #testimonials-btn:focus, #search-engagements-btn:focus, #year-end-letter-btn:focus {
+    background-color: rgba(13, 19, 37, 0.124);
+} */
 
 #welcome-btn {
     text-align: center; 
@@ -157,41 +172,87 @@ button {
 }
 
 .text-section {
-    color: #D5DDE9;
-    color: #C0C5D2;
-    font-size: 15px;
+    color: var(--feather-grey);
+    font-size: 13px;
     padding: 20px;
 }
 
-.text-content, ul {
-    line-height: 1.1rem;
+.text-content, ul, li, .about-ul {
+    line-height: 1rem;
 }
 
 .line {
-    color: #F7F8FB;
+    color: var(--offwhite);
 }
 
 #welcome-section {
     display: block;
-    /* border: 3px solid red; */
 }
 .section-title {
-    /* border: 2px solid pink; */
     margin: 0;
     text-transform: uppercase;
-    font-weight:300;
+    font-weight: 200;
     letter-spacing: 0.20rem;
-    font-size: 30px;
-    height: 37px;
-    border-bottom: 1px solid #F7F8FB;
+    font-size: 26px;
+    height: 32px;
+    border-bottom: 1px solid var(--offwhite);
 }
 
 .title-gray {
-    color:#828ca6a1;
+    color:var(--transparent-med-grey);
+}
+
+.about-nav {
+    border: .1px solid var(--feather-grey);
+    margin-top: 2em;
+    background: var(--navy);
+}
+
+.about-nav-image {
+    background: url("./pics/graph2copy3Black.png"), lightgray 0% 0% / 15.000000596046448px 15.000000596046448px repeat;
+    background-blend-mode:hard-light;
+    background-size: 50%; 
+}
+
+.about-nav-transparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--transparent-navy);
+}
+
+#abt-quality-btn, #abt-ethics-btn, #abt-backgrounds-btn {
+    color: var(--feather-grey);
+    text-transform: uppercase;
+}
+
+#abt-quality-btn:hover, #abt-ethics-btn:hover, #abt-backgrounds-btn:hover {
+    background-color: var(--transparent-feather-grey);
+}
+
+/* #abt-quality-btn:focus, #abt-ethics-btn:focus, #abt-backgrounds-btn:focus {
+    background-color: var(--transparent-feather-grey);
+} */
+
+.vl {
+    height: auto;
+    width: 1.5px;
+    background-color: var(--feather-grey);
+    margin: 3px 0 3px 0;
 }
 
 .bold-txt {
     font-weight: 800;
+}
+
+.bold-n-underline-txt {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.indent-txt {
+    text-indent: 13%;
+    margin: 0;
 }
 
 .about-section {
@@ -214,23 +275,24 @@ button {
     display: none;
 }
 
-.abt-quality-section {
+#abt-quality-section {
     display: none;
+    font-size: 13px;
+    line-height: 1.1rem;
+    margin-top: 50px;
 }
 
-.abt-ethics-section {
+#abt-ethics-section {
     display: none;
+    font-size: 13px;
+    line-height: 1.1rem;
+    margin-top: 50px;
 }
 
-.abt-backgrounds-section {
+#abt-backgrounds-section {
     display: none;
+    font-size: 13px;
+    line-height: 1.1rem;
+    margin-top: 50px;
 }
 
-.about-nav {
-    border: 1px solid hotpink;
-    
-}
-
-#abt-quality-btn, #abt-ethics-btn, #abt-backgrounds-btn {
-    color: #D5DDE9;
-}

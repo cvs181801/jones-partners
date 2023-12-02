@@ -131,7 +131,7 @@ button {
 }
 
 
-#about-btn:hover, #testimonials-btn:hover, #search-engagements-btn:hover, #year-end-letter-btn:hover {
+#about-btn:hover, #testimonials-btn:hover, #search-engagements-btn:hover {
     background-color: rgba(13, 19, 37, 0.124);
 }
 
@@ -268,7 +268,7 @@ button {
     display: block;
 }
 
-#about-section, #testimonials-section, #search-engagements-section, #year-end-letter-section, #contact-information-section {
+#about-section, #testimonials-section, #search-engagements-section, #contact-information-section {
     display: none;
 }
 

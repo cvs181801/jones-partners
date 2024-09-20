@@ -110,9 +110,9 @@ body {
     letter-spacing: 0.26rem;
 }
 
-.primarysearch-span {
+/* .primarysearch-span {
     font-size: 11px;
-}
+} */
 
 #about-span {
     font-size: 11px;
@@ -131,7 +131,7 @@ button {
 }
 
 
-#about-btn:hover, #testimonials-btn:hover, #search-engagements-btn:hover {
+#about-btn:hover, #testimonials-btn:hover, #community-service-btn:hover {
     background-color: rgba(13, 19, 37, 0.124);
 }
 
@@ -268,7 +268,7 @@ button {
     display: block;
 }
 
-#about-section, #testimonials-section, #search-engagements-section, #contact-information-section {
+#about-section, #testimonials-section, #community-service-section, #contact-information-section {
     display: none;
 }
 

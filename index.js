@@ -1,7 +1,8 @@
 const welcomeBtn = document.getElementById('welcome-btn');
 const aboutBtn = document.getElementById('about-btn');
 const testimonialsBtn = document.getElementById("testimonials-btn");
-const searchEngagementsBtn = document.getElementById("search-engagements-btn");
+//const searchEngagementsBtn = document.getElementById("search-engagements-btn");
+const communityServiceBtn = document.getElementById("community-service-btn");
 const contactBtn = document.getElementById("contact-btn");
 
 const abtQualityBtn = document.getElementById('abt-quality-btn');
@@ -11,7 +12,8 @@ const abtBackgroundsBtn = document.getElementById('abt-backgrounds-btn');
 const welcomeSection = document.getElementById("welcome-section");
 const aboutSection = document.getElementById("about-section");
 const testimonialsSection = document.getElementById("testimonials-section");
-const searchEngagementsSection = document.getElementById("search-engagements-section");
+//const searchEngagementsSection = document.getElementById("search-engagements-section");
+const communityServiceSection = document.getElementById('community-service-section');
 const contactInformationSection = document.getElementById("contact-information-section");
 
 const abtSectionDefault = document.getElementById('about-section-default');
@@ -19,9 +21,9 @@ const abtQualitySection = document.getElementById('abt-quality-section');
 const abtEthicsSection = document.getElementById('abt-ethics-section');
 const abtBackgroundsSection = document.getElementById('abt-backgrounds-section');
 
-const sectionArray = [welcomeSection, aboutSection, testimonialsSection, searchEngagementsSection, contactInformationSection];
+const sectionArray = [welcomeSection, aboutSection, testimonialsSection, communityServiceSection, contactInformationSection];
 const abtSectionArray = [abtSectionDefault, abtQualitySection, abtEthicsSection, abtBackgroundsSection];
-const mainNavBtnArray = [aboutBtn, testimonialsBtn, searchEngagementsBtn];
+const mainNavBtnArray = [aboutBtn, testimonialsBtn, communityServiceBtn];
 
 const navyBlue = '#112557';
 const ltGrey = '#919AB1';
@@ -83,17 +85,17 @@ testimonialsBtn.addEventListener("click", function(e){
     });  
 });
 
-searchEngagementsBtn.addEventListener("click", function(e){
+communityServiceBtn.addEventListener("click", function(e){
     e.preventDefault();
     sectionArray.forEach(element => {
-        if (element.id != "search-engagements-section") {
+        if (element.id != "community-service-section") {
             element.style.display = "none"
         } else {
             element.style.display = "block";
         }
     });
     mainNavBtnArray.forEach(btn => {
-        if (btn.id == "search-engagements-btn"){
+        if (btn.id == "community-service-btn"){
             btn.style.color = ltGrey;
         } else {
             btn.style.color = navyBlue;

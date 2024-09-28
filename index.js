@@ -28,6 +28,8 @@ const mainNavBtnArray = [aboutBtn, testimonialsBtn, communityServiceBtn];
 const navyBlue = '#112557';
 const ltGrey = '#919AB1';
 
+console.log("The Javascript file has been served.")
+
 welcomeBtn.addEventListener("click", function(e){
     e.preventDefault();
     sectionArray.forEach(element => {
